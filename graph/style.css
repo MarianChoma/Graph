@@ -1,0 +1,84 @@
+/*@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";*/
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+*{
+    padding: 0;
+    margin: 0;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    font-family: Roboto, sans-serif;
+}
+header{
+    text-align: center;
+    width: 100%;
+    font-size: 30px; background-color: red;
+}
+#chart {
+    max-width: 750px;
+    margin: 35px auto;
+    background-color: white;
+}
+.container-fluid{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1600' height='800' preserveAspectRatio='none' viewBox='0 0 1600 800'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1497%26quot%3b)' fill='none'%3e%3crect width='1600' height='800' x='0' y='0' fill='url(%23SvgjsLinearGradient1498)'%3e%3c/rect%3e%3cpath d='M -73.4394635146819%2c513 C 33.36%2c465.8 246.96%2c266.8 460.5605364853181%2c277 C 674.16%2c287.2 780.96%2c557 994.5605364853182%2c564 C 1208.16%2c571 1314.96%2c332.4 1528.5605364853182%2c312 C 1742.16%2c291.6 2048.27%2c454.8 2062.560536485318%2c462 C 2076.85%2c469.2 1692.51%2c370.8 1600%2c348' stroke='rgba(200%2c 250%2c 142%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -1000.8742333948189%2c240 C -894.07%2c275 -680.47%2c388.8 -466.8742333948189%2c415 C -253.27%2c441.2 -146.47%2c367.4 67.12576660518113%2c371 C 280.73%2c374.6 387.53%2c433.6 601.1257666051811%2c433 C 814.73%2c432.4 935.35%2c355.2 1135.125766605181%2c368 C 1334.9%2c380.8 1507.03%2c471.2 1600%2c497' stroke='rgba(249%2c 248%2c 113%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -944.9451095926381%2c402 C -838.15%2c390.8 -624.55%2c324.2 -410.9451095926381%2c346 C -197.35%2c367.8 -90.55%2c528.4 123.05489040736188%2c511 C 336.65%2c493.6 443.45%2c250.6 657.0548904073619%2c259 C 870.65%2c267.4 1002.47%2c555.2 1191.0548904073619%2c553 C 1379.64%2c550.8 1518.21%2c309 1600%2c248' stroke='rgba(200%2c 250%2c 142%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -1012.5091979561005%2c478 C -905.71%2c456.8 -692.11%2c380.4 -478.5091979561005%2c372 C -264.91%2c363.6 -158.11%2c447.2 55.49080204389952%2c436 C 269.09%2c424.8 375.89%2c321.6 589.4908020438995%2c316 C 803.09%2c310.4 921.39%2c421 1123.4908020438995%2c408 C 1325.59%2c395 1504.7%2c282.4 1600%2c251' stroke='rgba(249%2c 248%2c 113%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1497'%3e%3crect width='1600' height='800' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='12.5%25' y1='-25%25' x2='87.5%25' y2='125%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1498'%3e%3cstop stop-color='rgba(217%2c 175%2c 217%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(151%2c 217%2c 225%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.range-wrap {
+    position: relative;
+    margin: 0 auto 3rem;
+}
+.range {
+
+    width: 100%;
+}
+.bubble {
+    background: red;
+    color: white;
+    padding: 4px 12px;
+    position: absolute;
+    border-radius: 14px;
+    left: 50%;
+    pointer-events: none;
+    transform: translateX(-35%);
+}
+.bubble::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: red;
+    left: 50%;
+}
+#cislo{
+    width: 90%;
+    /*width: 136px;*/
+    margin-top: 20px;
+}
+#myinput{
+   width: 100%;
+    height: 20px;
+    /*width: 136px;*/
+    margin-top: 20px;
+}
+.bubble{
+    margin-top: 17px;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+}
+.form-check{
+    margin-top: 20px;
+}
+.colbck{
+    background-color: rgba(253, 253, 253, 0.5);
+    height: 170px;
+    margin-top: 170px;
+    border-radius: 8px;
+}
+
